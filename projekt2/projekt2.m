@@ -34,23 +34,23 @@ Im = uint8(zeros(Y,X));
 [Im4,~,~,~] = trojkat(Im, A, B, C, brzegkolor, dx, dy);% to jest zas³oniête i tak
 % p³aszczyzny
 
-% Imm = zmiesc(Im1, Im2, Im3, dx, dy, WW, AA, BB, CC, WABeps,WACeps,WBCeps, Iamb, Imax, eye, plight1, m, alpha, 0);
-%najpierw oœwietliæ, potem z-buforowaæ?
-% figure(1); imshow(Im1);
-% figure(2);imshow(Im2);
-% figure(3);imshow(Im3);
-% figure(4);imshow(Im4);
-% figure(5);imshow(Imm);
-% imwrite(Imm, 'lambert1.png');
-% Imm = zmiesc(Im1, Im2, Im3, dx, dy, W, A, B, C, WABeps,WACeps,WBCeps, Iamb, Imax, eye, plight2, m, alpha, 0);
-% figure(6);imshow(Imm);%teraz po poprawce mamy dwa ró¿ne obrazki
-% imwrite(Imm, 'lambert2.png');
-% Imm = zmiesc(Im1, Im2, Im3, dx, dy, W, A, B, C, WABeps,WACeps,WBCeps, Iamb, Imax, eye, plight1, m, alpha, 1);
-% figure(7);imshow(Imm);%teraz po poprawce mamy dwa ró¿ne obrazki
-% imwrite(Imm, 'phong1.png');
-% Imm = zmiesc(Im1, Im2, Im3, dx, dy, W, A, B, C, WABeps,WACeps,WBCeps, Iamb, Imax, eye, plight2, m, alpha, 1);
-% figure(8);imshow(Imm);%teraz po poprawce mamy dwa ró¿ne obrazki
-% imwrite(Imm, 'phong2.png');
+Imm = zmiesc(Im1, Im2, Im3, dx, dy, WW, AA, BB, CC, WABeps,WACeps,WBCeps, Iamb, Imax, eye, plight1, m, alpha, 0);
+% najpierw oœwietliæ, potem z-buforowaæ?
+figure(1); imshow(Im1);
+figure(2);imshow(Im2);
+figure(3);imshow(Im3);
+figure(4);imshow(Im4);
+figure(5);imshow(Imm);
+imwrite(Imm, 'lambert1.png');
+Imm = zmiesc(Im1, Im2, Im3, dx, dy, W, A, B, C, WABeps,WACeps,WBCeps, Iamb, Imax, eye, plight2, m, alpha, 0);
+figure(6);imshow(Imm);%teraz po poprawce mamy dwa ró¿ne obrazki
+imwrite(Imm, 'lambert2.png');
+Imm = zmiesc(Im1, Im2, Im3, dx, dy, W, A, B, C, WABeps,WACeps,WBCeps, Iamb, Imax, eye, plight1, m, alpha, 1);
+figure(7);imshow(Imm);%teraz po poprawce mamy dwa ró¿ne obrazki
+imwrite(Imm, 'phong1.png');
+Imm = zmiesc(Im1, Im2, Im3, dx, dy, W, A, B, C, WABeps,WACeps,WBCeps, Iamb, Imax, eye, plight2, m, alpha, 1);
+figure(8);imshow(Imm);%teraz po poprawce mamy dwa ró¿ne obrazki
+imwrite(Imm, 'phong2.png');
 %% Czêœæ 2
 % animacja
 dt = 0.01; %od 0 do 1

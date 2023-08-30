@@ -59,9 +59,9 @@ for L = 0:1
     open(video); % tu wypada ostrze¿enie o potencjalnie nieograniczonej d³ugoœci filmu
     for K = 0:liczba_klatek
         
-        if K ==17
-            AA1 = AA1;
-        end
+%         if K ==17
+%             AA1 = AA1;
+%         end
         %if K>0 % moje sklecone na ¿ywio³
             if L==1
                 Bprzesun(3) = sin(K*pi/50);
